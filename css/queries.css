@@ -1,5 +1,9 @@
-/* below 1344px smsller desktop */
-@media (max-width: 84em) {
+
+
+/* laptop 1440 */
+
+
+@media (max-width: 90em) {
     .header{
         max-width: 120rem;
         max-width: 100vw;
@@ -23,6 +27,67 @@
         margin-left: 20rem;
  
     }
+
+    .about-me{
+        font-size: 4rem;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 12rem 0;
+        position: relative;
+          max-width: 140%;
+        margin-left:57rem;
+        letter-spacing: 3px;
+    }
+    
+}
+
+
+
+
+
+
+/* below 1344px smsller desktop */
+@media (max-width: 84em) {
+    .header{
+        max-width: 120rem;
+        max-width: 100vw;
+    }
+    .header-title{
+        font-size: 2.9rem;
+    }
+    .nav-link{
+        font-size: 1.6rem;
+        padding-right: 5rem;
+    }
+
+    .hero-text {
+        margin-left: 10rem;
+        margin-top: 15rem;
+    }
+    .project-nav {
+
+        /* width: 20%; */
+        padding: 2rem 6rem;
+        margin-left: 20rem;
+ 
+    }
+
+
+    .about-me{
+        font-size: 4rem;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 12rem 0;
+        position: relative;
+          max-width: 140%;
+        margin-left:38rem;
+        letter-spacing: 3px;
+    }
+
+
+
 }
 
 
@@ -34,14 +99,14 @@ html{
 }
 
 .hero-text {
-    margin-left: 8.5rem;
+    margin-left: 6rem;
     margin-top: 15rem;
 }
 
 .hero-texts {
-    color: #222;
     width: 130%;
-    margin-left: -5rem;
+    margin-left: -6rem;
+    /* color: green; */
 }
 
 
@@ -49,7 +114,29 @@ html{
     margin-left: 15rem;
 
 }
+
+
+.about-me{
+    margin: 12rem 0;
+    margin-left: 41rem;
 }
+
+
+.about-text{
+   margin-left: 2rem;
+}
+
+
+.skill-title{
+    margin-left: 19.5rem;
+    margin-bottom: 3rem;
+
+}
+
+
+
+}
+
 
 /* below 944 (tablets) */
 
@@ -58,20 +145,97 @@ html{
         font-size: 50%;
     }
 
+    .section-hero{
+        height: 70vh;
+        min-height: 80rem;
+        max-height: 100rem;
+    }
+
     .nav-link{
         font-size: 1.9rem;
         padding-right: 5rem;
     }
 
     .hero-text{
-        margin-left: 5.5rem;
+        margin-left: 6rem;
+        /* color: green;; */
     }
+    .hero-texts{
+        margin-left: -9rem;
+    }
+
 }
 
 /* below740px smaller tablets */
 @media (max-width: 49em) {
+    html{
+        font-size: 47%;
+    }
+  
+    .section-hero{
+        background: linear-gradient( to right, rgba(245, 245, 245,.8), rgba(245,245,245,.8)),url("../image/hero-img.png");
+        /* background-size: cover; */
+        height: 100vh;
+        min-height: 60rem;
+        max-height: 85rem;
+        max-width: 100vw;
+     }
+ 
+
+    .header{
+        max-width: 100rem;
+        max-width: 100vw;
+    }
+    .header-title{
+        font-size: 2.3rem;
+    }
+    .nav-link{
+        font-size: 1.6rem;
+        padding-right: 5rem;
+    }
+
+    .hero-text{
+        margin-left: 11rem;
+        font-size: 4.5rem;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+        max-width: 130%;
+        margin-top: 6rem;
+    }
+
+    .hero-texts {
+        color: #222;
+        width: 120%;
+        margin-left: -5rem;
+    }
+
+    .project-nav {
+
+        /* width: 20%; */
+        padding: 2rem 6rem;
+        margin-left: 13rem;
+        padding-bottom: -3rem;
+        margin-bottom: -3rem;
+ 
+    }
+
+    .about-me{
+        margin-left: 40rem;
+    }
+
+    .about-text{
+        margin-left: 3rem;
+        font-size: 2.3rem;
+     }
+
+.skills__skill{
+    
+    width: 75px;
+    height: 40px;
+}
 
 
+    /* mobile navigation */
 
     .btn-mobile-nav {
         display: block;
@@ -79,15 +243,14 @@ html{
       }
 
     .nav {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(35, 34, 36, 0.9);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(px);
         position: absolute;
         top: 0;
         left: 0;
-        width: 30%;
+        width: 100vw;
         height: 100vh;
-    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -111,6 +274,7 @@ html{
         pointer-events: auto;
         visibility: visible;
         transform: translateX(0);
+        position: absolute;
       }
     
       .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -119,5 +283,226 @@ html{
       .nav-open .icon-mobile-nav[name="menu-outline"] {
         display: none;
       }
+
+      .nav-link {
+        flex-direction: column;
+        gap: 4rem;
+        font-size: 1rem;
+        color: #222;
+        position: absolute;
+      }
+
     
+}
+
+
+/* below 544  (ohones)*/
+@media (max-width: 34em) {
+    html{
+        font-size: 47%;
+    }
+ 
+    .header-title{
+        font-size: 2.3rem;
+    }
+
+    .hero-text{
+        margin-left: 2rem;
+    }
+
+    .hero-texts {
+        width: 140%;
+    }
+
+    .project-nav {
+        margin-left: 5rem;
+        padding-bottom: -1rem;
+        margin-bottom: -1rem;
+        padding: 1rem -4rem;
+        
+ 
+    }
+
+    .about-me{
+        margin-left: 18rem;
+        margin-bottom: 3rem;
+    }
+
+    .text-break{
+        line-height: .5;
+       }
+
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--2-cols{
+        grid-template-columns: 1fr;
+    }
+    .grid--3-cols{
+        grid-template-columns:repeat(3, 2fr);
+    }
+
+
+.skills__skill{
+    
+    width: 85px;
+    height: 50px;
+    margin-left: 1.5rem;
+    margin-top: -4rem;
+
+}
+
+
+.skill-title{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    display: flex;
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+
+}
+.skills{
+    margin-left: -4rem;
+}
+
+.nav {
+    background-color: rgba(35, 34, 36, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    /* hide the navigation */
+    /* display: none; */
+
+    /* 1  hide it vissually*/
+    opacity: 0;
+    /* 2  make it unaccesible to mousse and keyboard*/
+    pointer-events: none;
+
+    /* 3  hide from screen readers*/
+    visibility: hidden;
+  }
+
+}
+
+/* below 400 */
+@media(max-width: 29em){
+   
+    .skills{
+        margin-left: -2rem;
+    }
+}    
+
+
+
+/* smaller phones */
+@media(max-width: 24em){
+    html{
+        font-size: 47%;
+    }
+ 
+    .header-title{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    .hero-text{
+        margin-left: 2.7rem;
+        font-size: 3.8rem;
+    }
+
+    .hero-texts {
+        width: 105%;
+        margin-left: .3rem;
+    }
+
+    .project-nav {
+        margin-left: 2rem;
+        padding-bottom: -1rem;
+        margin-bottom: -1rem;
+        padding: 2rem -10rem;
+        
+ 
+    }
+
+    .about-me{
+        margin-left: 10rem;
+        margin-bottom: 3rem;
+        max-width: 100%;
+        font-size: 3rem;
+    }
+
+    .about-text{
+        margin-left: 3rem;
+        font-size: 2.3rem;
+        max-width: 100%;
+     }
+
+
+    .text-break{
+        line-height: .5;
+       }
+
+    .grid {
+        row-gap: 4.8rem;
+    }
+    .grid--3-cols{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+
+.skills__skill{
+    
+    width: 67px;
+    height: 50px;
+    margin-left: 1.5rem;
+    margin-top: -4rem;
+
+}
+
+
+
+.skills{
+    margin-left: -4rem;
+}
+
+.nav {
+    background-color: rgba(35, 34, 36, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    /* hide the navigation */
+    /* display: none; */
+
+    /* 1  hide it vissually*/
+    opacity: 0;
+    /* 2  make it unaccesible to mousse and keyboard*/
+    pointer-events: none;
+
+    /* 3  hide from screen readers*/
+    visibility: hidden;
+  }
 }
