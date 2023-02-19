@@ -45,7 +45,8 @@
 
 
    .btns {
-    background:#864d86;
+   
+    background: #925f92;
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -55,6 +56,15 @@
     box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
     transition: transform .3s;
     text-decoration: none;
+}
+
+.btns:hover{
+   background-color:#864d86;
+}
+
+.symbol{
+  margin-left: 10rem;
+  color: #925f92;
 }
    
    .header {
@@ -96,6 +106,10 @@
     transition: all 0.3;
     padding-right: 7rem;
     font-family: 'Source Sans Pro';
+}
+
+.nav-link:hover{
+  color:#864d86;
 }
 
 .btn-mobile-nav {
@@ -150,7 +164,7 @@ width: 92;
     font-weight: 500;
     font-family: 'Source Sans Pro';
     font-weight: bold;
-    margin-left: 18rem;
+    margin-left: 19rem;
     color: #000000;
 }
 
@@ -160,7 +174,7 @@ width: 92;
     text-align: center;
     color: #222;
     width: 100%;
-    margin-left: -3rem;
+    margin-left: -1rem;
     margin-top: 3rem;
     font-size: 2.5rem;
     letter-spacing: 1px;
@@ -171,7 +185,7 @@ width: 92;
 
     /* width: 20%; */
     padding: 2rem 6rem;
-    margin-left: 27rem;
+    margin-left: 27.5rem;
     margin-top: 8rem;
     font-size: 2.5rem;
     color: #222;
@@ -254,7 +268,7 @@ width: 92;
 
 
 .section-project{
-background-color: #f8f8f8;
+background-color: #fdfdfd;
 }
 
 .projects{
@@ -262,14 +276,97 @@ background-color: #f8f8f8;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    margin: 12rem 0;
+    /* margin: 1rem 0; */
     position: relative;
-      max-width: 140%;
-    margin-left:73rem;
+    max-width: 140%;
+    margin-left: 3rem;
     letter-spacing: 3px;
     padding-top: 15rem;
 }
 
+
+
+.project-img {
+    width: 120%;
+    margin-bottom: 10rem;
+    background-color: #888;
+  }
+  
+  .step-img-box {
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   /* .step-img-box::before,
+  .step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .step-img-box::before {
+    width: 60%; */
+  
+    /* 60% of parent width */
+    /* padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+  }
+  
+  .step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+  }  */
+
+
+
+  .project-text{
+    width:70% ;
+    margin-left: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .project-title{
+    font-size: 3rem;
+    font-weight: bold;
+  
+  }
+
+  .project-texts{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height:1.2 ;
+    margin-top: 1.7rem;
+    margin-bottom: 5rem;
+
+  }
+ 
+  .project-link{
+    background-color: #925f92;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    margin-top: 9rem;
+    border-radius: 5px;
+    text-decoration: none;  
+    color: #fff;
+  }
+
+.project-link:hover,
+.project-link:active {
+  /* color: #888; */
+  background-color:#864d86;
+}
 
 /* .mouse{
     width: 25px;
@@ -293,3 +390,61 @@ background-color: #f8f8f8;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite;
 } */
+
+
+.connect{
+  background: linear-gradient( to right, rgba(245, 245, 245,.8), rgba(245,245,245,.8)),url("../image/hero-img.png");
+}
+
+.about-me__contact{
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 12rem 0;
+  position: relative;
+    max-width: 140%;
+  margin-left:70rem;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+  padding-top: 5rem;
+}
+
+
+.symbol-contact{
+  font-size: 4rem;
+  margin-top: -10rem;
+}
+
+.medias{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30rem;
+  flex-direction: row;
+}
+ .media{
+   text-decoration: none;
+   color: #222;
+   margin-left: 20rem;
+   font-size: 2rem;
+   margin-top: -5rem;
+   margin-bottom: 5rem;
+ }
+
+ .email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -9rem;
+ }
+ .email-adress{
+  font-size: 2rem;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+.icons{
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
