@@ -39,16 +39,14 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
             <nav class = "nav"> 
                 <ul class = " nav-list"> 
                     <li>
-                        <a class =" nav-link" href = "index.html">HOME</a>
+                        <a class =" nav-link" href = "#home">HOME</a>
                     </li>
                     <li>
-                        <a class =" nav-link" href = "project.html"> PROJECTS </a>
+                        <a class =" nav-link" href = "#project"> PROJECTS </a>
                     </li>
+                
                     <li>
-                        <a class =" nav-link" href = "work.html">WORK</a>
-                    </li>
-                    <li>
-                        <a class =" nav-link" href = "work.html">CONNECT</a>
+                        <a class =" nav-link" href = "#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -65,7 +63,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
         <main>
             <section class="section-hero"> 
-                <div class="hero-content">
+                <div class="hero-content" id="home">
                     <h1 class="hero-text">
                         HI, I'M PRAISE.
                     </h1>
@@ -74,7 +72,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
                         I love to produce intuitive and compelling User Experiences that drive deep and seamless engagement with users.
                     </h3>   
                     <div class="project-btns">
-                        <a href ="#" alt=" project nav" class="btns project-nav">PROJECTS </a> 
+                        <a href ="#project" alt=" project nav" class="btns project-nav">PROJECTS </a> 
                     </div>
 <!-- 
                     <div class="section-hero__mouse-scroll-cot">
@@ -89,9 +87,12 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
             <section class="section-about">
                 <div>
                     <div class="about-me">
-                    <h3 class="about-heading">
+                    <h3 class="projects">
                         ABOUT ME
                     </h3>
+                    <p class="symbol">
+                        ----
+                    </p>
                     </div>
                     <div class="container grid grid--2-cols">
                          <div class="about-text">
@@ -101,7 +102,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
                             </p>
                             
                             <div class="contact">
-                               <a href="#" alt="contact" class="btns contact-nav" >CONTACT</a>
+                               <a href="#contact" alt="contact" class="btns contact-nav">CONTACT</a>
                             </div>
                         </div>
                     
@@ -155,11 +156,14 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
             </section>
 
-            <section class="section-project">
-                    <div>
+            <section class="section-project" id="project">
+                    <div class="about-me">
                         <h2 class="projects">
                             PROJECTS
                         </h2>
+                        <p class="symbol">
+                            ----
+                        </p>
                     </div>
             
                     <section class="">
@@ -194,66 +198,100 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
                             <!-- forkify -->
 
                             <div class="project-img-box">
-                                <img class="forfify-img" src ="images/forkify.png" alt="forkify" />
+                                <img class="project-img" src ="image/forkify-img.png" alt="forkify" />
                             </div>
 
                                 <div class="project-text">
+                                    <h3 class="project-title">
+                                        Forkify App
+                                    </h3>
+                                   
                                     <p class="project-texts"> 
-                                        Search over 1000000 recipes
+                                        With Forkify, you can search over 1000000 recipes, Add your own recipes and save for later.
                                     </p> 
-                                    <a class="forkify-link" href ="https://forkify-app-praise.netlify.app/" alt="forkify">
+                                    <a class="project-link" href ="https://forkify-app-praise.netlify.app/" alt="forkify">
                                         Forkify-App
                                     </a> 
                                 </div>
+
+                            <!-- mapty -->
+
+                            <div class="project-img-box">
+                                <img class="project-img" src ="image/mapty-img.png" alt="forkify" />
                             </div>
 
-                            <div class="project-outline">
-                                <img class="forfify-img" src ="images/mapty.png" alt="forkify" />
-                                <div class="project-title">
-                                    <a class="forkify-link" href ="https://mapty-app-po.netlify.app/" alt="forkify">
+                                <div class="project-text">
+                                 
+                                    <h3 class="project-title">
+                                        Mapty
+                                    </h3>
+                                    <p class="project-texts"> 
+                                      Mapty App helps you keep record of your cycling and running progress     
+                                    </p>
+                                    <a class="project-link" href ="https://mapty-app-po.netlify.app/" alt="forkify">
                                         Mapty-App
                                     </a> 
-                                    <p class="project-text"> 
-                                      Keep record of your cycling and running progress
-                                    
-                                    </p>
                                 </div>
-                            </div>
+                            <!-- </div> -->
+
+                            <!-- omnifoods -->
                             <div class="project-outline">
-                                <img class="forfify-img" src ="images/Omnifoods.png" alt="forkify" />
-                                <div class="project-title">
-                                    <a class="forkify-link" href ="https://omnifoods-praise.netlify.app/" alt="forkify">
+                                <img class="project-img" src ="image/omnifoods-img.png" alt="forkify" />
+                            </div>
+                                <div class="project-text">
+                                   
+                                    <h3 class="project-title">
                                         Omnifoods
-                                    </a> 
-                                    <p class="project-text"> 
+                                    </h3>
+
+                                    <p class="project-texts"> 
                                         A static website built with HTML5, CSS and Javascript
                                     </p class="project-text">
-                                </div>
-                            </div>
-                        </div>
+                                     <a class="project-link" href ="https://omnifoods-praise.netlify.app/" alt="forkify">
+                                        Omnifoods
+                                    </a>  
+                                 </div>
+                      
             
-                            <div class="container grid grid--3-cols">
-                                <div class="project-outline2">
-                                    <img class="forfify-img" src ="images/expence-tracker.png" alt="forkify" />
-                                    <div class="project-title">
-                                        <a class="forkify-link" href ="https://my-expense-tracking-app.netlify.app/" alt="forkify">
+                            <!-- <div class="container grid grid--3-cols"> -->
+
+                                <!-- expense tracking -->
+                                <div class="project-img-box">
+                                    <img class="project-img" src ="image/expense-tracking-img.png" alt="forkify" />
+                                </div>
+                                    <div class="project-text">
+                                       
+                                        <h3 class="project-title">
+                                           Expense Tracking App
+                                        </h3>
+
+                                        <p class="project-texts"> 
+                                        Expense tracking app enables you to track your expenses for the year.
+                                        </p> 
+                                        <a class="project-link" href ="https://my-expense-tracking-app.netlify.app/" alt="forkify">
                                             Expense Tracking App
                                         </a> 
-                                        <p class="project-text"> 
-                                        Expense tracking app enables you to track your expenses for the year. This is neccessary in improving on financial management skills.
-                                        </p>
                                     </div>
+                                <!-- </div> -->
+
+
+                                <!-- healthy switcher -->
+                                <div class="project-img-box">
+                                    <img class="project-img" src ="image/healthy-switcher-img.png" alt="forkify" />
                                 </div>
-                                <div class="project-outline2">
-                                    <img class="forfify-img" src ="images/healthy-switcher2.png" alt="forkify" />
-                                    <div class="project-title">
-                                        <a class="forkify-link" href ="https://dev-healthy-switcher.netlify.app/" alt="forkify">
+                                    <div class="project-text">
+                                     
+                                        <h3 class="project-title">
+                                            Healthy Switcher
+                                        </h3>
+
+                                        <p class="project-texts"> 
+                                          Healthy is the new switch. Healthy switcher is a static website built with HTML5, CSS and Javascript. 
+                                        
+                                        </p>  
+                                         <a class="project-link" href ="https://dev-healthy-switcher.netlify.app/" alt="forkify">
                                             Healthy Switcher
                                         </a> 
-                                        <p class="project-text"> 
-                                          Healthy is the new switch. Healthy switcher is a static website built with HTML5, CSS and Javascript
-                                        
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -262,20 +300,29 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     </body>
     <footer>
         <div class="connect">
-            <h3 class="connects"> 
-                CONNECT WITH ME
-            </h3>
 
             <div>
-             <a class = "media" href ="https://github.com/PraiseOmeire/">
+            <h3 class="about-me__contact" id="contact"> 
+                CONTACT
+            </h3>
+        
+            </div>
+
+            <div class="medias">
+             <a class = "media" href ="https://github.com/PraiseOmeire/"><ion-icon class="icons" name="logo-github"></ion-icon>
                 Github
             </a>
-            <a class = "media" href ="work.html">
-               Email
+            <a class = "media" href ="https://twitter.com/Jahz_Rhythm"> <ion-icon class="icons" name="logo-twitter"></ion-icon>
+               Twitter
             </a>
-            <a class = "media" href ="https://www.linkedin.com/mwlite/in/omeire-praise-b7080b217">
+            <a class = "media" href ="https://www.linkedin.com/mwlite/in/omeire-praise-b7080b217"><ion-icon class="icons" name="logo-linkedin"></ion-icon>
                 LinkdIn
             </a>
+            </div>
+
+            <div class="email">
+                
+               <p class="email-adress"> <ion-icon class="icons" name="mail"></ion-icon> omeirepraise99@gmail.com</p> 
             </div>         
         </div>
     </footer>
