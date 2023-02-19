@@ -13,12 +13,12 @@ btnNavEl.addEventListener("click", function () {
 
 ////scrolling animation
 
-const allLinks = document.querySelectorAll("a:link");
+const allButtons = document.querySelectorAll(".btns");
 
-allLinks.forEach(function (link) {
+allButtons.forEach(function (btns) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const href = link.getAttribute("href");
+    const button = link.getAttribute("button");
 
     //scroll back to top
     if (href === "#")
@@ -26,7 +26,7 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
-    ///scroll to other links
+   // scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       console.log(sectionEl);
