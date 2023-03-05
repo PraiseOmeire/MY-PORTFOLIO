@@ -42,16 +42,8 @@
 
     .about-me__contact{
         margin-left: 58.5rem;
-    }
-
-
-    
+    }    
 }
-
-
-
-
-
 
 /* below 1344px smsller desktop */
 @media (max-width: 84em) {
@@ -688,12 +680,7 @@ html{
     color: #222;
     position: absolute;
   }
-
-
-
 }    
-
-
 
 /* smaller phones */
 @media(max-width: 24em){
@@ -785,7 +772,7 @@ html{
     position: relative;
     top: 0;
     left: 0;
-    width: 10vw;
+    width: 30vw;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -808,9 +795,9 @@ html{
 
   .nav-link {
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transition: all 0.3;
-    padding-right: 0.5rem;
+    padding-right: 0.1rem;
     /* margin-top: 4rem; */
     font-family: 'Source Sans Pro';
 }
@@ -822,6 +809,7 @@ html{
     color: #222;
     position: absolute;
   }
+
 
 }
 
@@ -963,7 +951,8 @@ html{
   .nav-link {
 
     font-size: 1rem;
-    transition: all 0.3;
+    transition: all 0.3; 
+    padding-right: 0.1rem;
     font-family: 'Source Sans Pro';
 }
 

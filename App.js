@@ -13,12 +13,12 @@ btnNavEl.addEventListener("click", function () {
 
 ////scrolling animation
 
-const allButtons = document.querySelectorAll(".btns");
+const allLinks = document.querySelectorAll("a:link");
 
-allButtons.forEach(function (btns) {
+allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const button = link.getAttribute("button");
+    const href = link.getAttribute("href");
 
     //scroll back to top
     if (href === "#")
@@ -26,11 +26,33 @@ allButtons.forEach(function (btns) {
         top: 0,
         behavior: "smooth",
       });
+
    // scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
+    if (href === "#" || href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if(href ==="https://forkify-app-praise.netlify.app/"){
+      window.location.assign("https://forkify-app-praise.netlify.app/");
+    }
+
+
+    if(href ==="https://mapty-app-po.netlify.app/"){
+      window.location.assign("https://mapty-app-po.netlify.app/");
+    }
+
+    if(href ==="https://omnifoods-praise.netlify.app/"){
+      window.location.assign("https://omnifoods-praise.netlify.app/");
+    }
+
+    if(href ==="https://my-expense-tracking-app.netlify.app/"){
+      window.location.assign("https://my-expense-tracking-app.netlify.app/");
+    }
+
+    if(href ==="https://dev-healthy-switcher.netlify.app/"){
+      window.location.assign("https://dev-healthy-switcher.netlify.app/");
     }
 
     ///close mobile navigation
