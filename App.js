@@ -11,55 +11,58 @@ btnNavEl.addEventListener("click", function () {
 });
 
 
+
+    // ///close mobile navigation
+    // if (link.classList.contains("nav-link"))
+    //   headerEl.classList.toggle("nav-open");
+
+
+
 ////scrolling animation
 
-const allLinks = document.querySelectorAll("a:link");
+// const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
 
-    //scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+//     //scroll back to top
+//     if (href === "#")
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
 
    // scroll to other links
-    if (href === "#" || href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      console.log(sectionEl);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
+    // if (href === "#" || href.startsWith("#")) {
+    //   const sectionEl = document.querySelector(href);
+    //   console.log(sectionEl);
+    //   sectionEl.scrollIntoView({ behavior: "smooth" });
+    // }
 
-    if(href ==="https://forkify-app-praise.netlify.app/"){
-      window.location.assign("https://forkify-app-praise.netlify.app/");
-    }
+    // if(href ==="https://forkify-app-praise.netlify.app/"){
+    //   window.location.assign("https://forkify-app-praise.netlify.app/");
+    // }
 
 
-    if(href ==="https://mapty-app-po.netlify.app/"){
-      window.location.assign("https://mapty-app-po.netlify.app/");
-    }
+    // if(href ==="https://mapty-app-po.netlify.app/"){
+    //   window.location.assign("https://mapty-app-po.netlify.app/");
+    // }
 
-    if(href ==="https://omnifoods-praise.netlify.app/"){
-      window.location.assign("https://omnifoods-praise.netlify.app/");
-    }
+    // if(href ==="https://omnifoods-praise.netlify.app/"){
+    //   window.location.assign("https://omnifoods-praise.netlify.app/");
+    // }
 
-    if(href ==="https://my-expense-tracking-app.netlify.app/"){
-      window.location.assign("https://my-expense-tracking-app.netlify.app/");
-    }
+    // if(href ==="https://my-expense-tracking-app.netlify.app/"){
+    //   window.location.assign("https://my-expense-tracking-app.netlify.app/");
+    // }
 
-    if(href ==="https://dev-healthy-switcher.netlify.app/"){
-      window.location.assign("https://dev-healthy-switcher.netlify.app/");
-    }
+    // if(href ==="https://dev-healthy-switcher.netlify.app/"){
+    //   window.location.assign("https://dev-healthy-switcher.netlify.app/");
+    // }
 
-    ///close mobile navigation
-    if (link.classList.contains("nav-link"))
-      headerEl.classList.toggle("nav-open");
-  });
-});
+
 
 
 
@@ -88,6 +91,7 @@ const observer = new IntersectionObserver(
   }
 );
 observer.observe(sectionHeroEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
