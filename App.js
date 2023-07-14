@@ -10,38 +10,6 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-
-////scrolling animation
-
-const allButtons = document.querySelectorAll(".btns");
-
-allButtons.forEach(function (btns) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const button = link.getAttribute("button");
-
-    //scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-   // scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      console.log(sectionEl);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-
-    ///close mobile navigation
-    if (link.classList.contains("nav-link"))
-      headerEl.classList.toggle("nav-open");
-  });
-});
-
-
-
-
 /////////////////////////////////////////
 //sticky navigation
 
@@ -66,6 +34,7 @@ const observer = new IntersectionObserver(
   }
 );
 observer.observe(sectionHeroEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

@@ -42,16 +42,8 @@
 
     .about-me__contact{
         margin-left: 58.5rem;
-    }
-
-
-    
+    }    
 }
-
-
-
-
-
 
 /* below 1344px smsller desktop */
 @media (max-width: 84em) {
@@ -688,12 +680,7 @@ html{
     color: #222;
     position: absolute;
   }
-
-
-
 }    
-
-
 
 /* smaller phones */
 @media(max-width: 24em){
@@ -785,7 +772,7 @@ html{
     position: relative;
     top: 0;
     left: 0;
-    width: 40vw;
+    width: 30vw;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -808,12 +795,21 @@ html{
 
   .nav-link {
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transition: all 0.3;
-    padding-right: 0.5rem;
+    padding-right: 0.1rem;
     /* margin-top: 4rem; */
     font-family: 'Source Sans Pro';
 }
+
+.nav-list {
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 3rem;
+    color: #222;
+    position: absolute;
+  }
+
 
 }
 
@@ -822,7 +818,7 @@ html{
 
 @media(max-width: 19em){
     html{
-        font-size: 47%;
+        font-size: 38%;
     }
  
     .header{
@@ -830,14 +826,14 @@ html{
         max-width: 100%;
     }
     .header-title{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-left: 1rem;
         /* color: green; */
     }
 
     .hero-text{
-        margin-top: 10rem;
-        margin-left: 6.5rem;
+        margin-top: 20rem;
+        margin-left: 7.5rem;
         font-size: 3.8rem;
     }
 
@@ -847,7 +843,7 @@ html{
     }
 
     .project-nav {
-        margin-left: 2rem;
+        margin-left: 1rem;
         padding-bottom: -1rem;
         margin-bottom: -1rem;
         padding: 2rem -10rem;
@@ -856,7 +852,7 @@ html{
     }
 
     .about-me{
-        margin-left: 3rem;
+        margin-left: 7.5rem;
         margin-bottom: 3rem;
         max-width: 100%;
         font-size: 2.3rem;
@@ -903,7 +899,7 @@ html{
 
 
 .about-me__contact{
-    margin-left: 10rem;
+    margin-left: 14rem;
     margin-top: 10rem;
 }
 
@@ -923,11 +919,11 @@ html{
     position: relative;
     top: 0;
     left: 0;
-    width: 20vw;
+    width: 10vw;
     height: 7vh;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease-in;
     transform: translateX(100%);
 
@@ -943,14 +939,20 @@ html{
     visibility: hidden;
   }
 
+  .nav-list {
+    flex-direction: row;
+    /* gap: 1rem; */
+    font-size: 3rem;
+    color: #222;
+    position: absolute;
+  }
 
 
   .nav-link {
 
     font-size: 1rem;
-    transition: all 0.3;
-    /* padding-right: 0.2rem; */
-    /* margin-top: 4rem; */
+    transition: all 0.3; 
+    padding-right: 0.1rem;
     font-family: 'Source Sans Pro';
 }
 
